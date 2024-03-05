@@ -2,10 +2,10 @@ import Pizzas from './Pizzas';
 
 const Menu = () => {
   return (
-    <div>
+    <main className="menu">
       <h2>Our Pizzas</h2>
       <Pizzas />
-    </div>
+    </main>
   );
 };
 

@@ -1,8 +1,9 @@
 const Header = () => {
+  const style = {};
   return (
-    <>
-      <h1> Pizzeria </h1>
-    </>
+    <header className="header">
+      <h1 style={style}> Pizzeria </h1>
+    </header>
   );
 };
 

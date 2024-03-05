@@ -9,9 +9,9 @@ const Footer = () => {
   //     alert('We are Currently Open');
   //   else alert('Sorry we are closed!');
   return (
-    <>
+    <footer className="footer">
       <p>{new Date().toLocaleTimeString()} We are Currently open</p>
-    </>
+    </footer>
   );
 };
 
