@@ -1,10 +1,13 @@
-const Pizzas = () => {
+const Pizzas = (props) => {
   return (
-    <>
-      <img src="pizzas/spinaci.jpg" alt="pizza spinaci" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomoto, mozarella, spinach and ricotta cheese</p>
-    </>
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredient}</p>
+        <span> ${props.price}</span>
+      </div>
+    </div>
   );
 };
 
