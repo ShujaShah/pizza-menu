@@ -13,7 +13,9 @@ const Footer = () => {
             {new Date().toLocaleTimeString()} We are Open until {closingHour}
             :00, You can visit us or order online +1 (800) 235 6600
           </p>
-          <button className="btn"> Order </button>
+          <a href="tel: 18002356600">
+            <button className="btn"> Order </button>
+          </a>
         </div>
       ) : (
         <p>
