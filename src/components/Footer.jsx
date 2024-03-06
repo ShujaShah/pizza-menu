@@ -5,13 +5,9 @@ const Footer = () => {
   const isOpen = hour >= openningHour && hour <= closingHour;
 
   console.log(isOpen);
-  //   if (hour >= openningHour && hour <= closingHour)
-  //     alert('We are Currently Open');
-  //   else alert('Sorry we are closed!');
   return (
     <footer className="footer">
-      {/* <p>{new Date().toLocaleTimeString()} We are Currently open</p> */}
-      {isOpen && (
+      {isOpen ? (
         <div className="order">
           <p>
             {new Date().toLocaleTimeString()} We are Open until {closingHour}
@@ -19,6 +15,10 @@ const Footer = () => {
           </p>
           <button className="btn"> Order </button>
         </div>
+      ) : (
+        <p>
+          We are open between {openningHour}:00 and {closingHour}:00
+        </p>
       )}
     </footer>
   );
